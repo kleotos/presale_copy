@@ -328,10 +328,7 @@
       margin: auto;
     }
 
-    .tstl {
-      display: flex;
-      flex-direction: column;
-    }
+    
     
    
     footer > div p {
@@ -339,8 +336,11 @@
     }
   }
   
-  @media screen and (min-width: 350px) {
-    
+  @media screen and (min-width: 320px) {
+    .tstl {
+      display: flex;
+      flex-direction: column;
+    }
     }
     
   
