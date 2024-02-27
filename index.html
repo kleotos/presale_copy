@@ -14,6 +14,36 @@
   <title>
 </title>
 
+<script>
+  document.addEventListener('contextmenu', function (event) {
+  event.preventDefault();
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+const imageContainer = document.getElementById("image-container");
+const images = [
+  "./assets/T1.png",
+  "./assets/T2.png",
+  "./assets/T3.png",
+  "./assets/T4.png",
+  "./assets/T5.png",
+  "./assets/T6.png",
+  "./assets/T7.png"
+];
+
+images.forEach(imageUrl => {
+  const imageCard = document.createElement("div");
+  imageCard.classList.add("image-card");
+  const image = document.createElement("img");
+  image.src = imageUrl;
+  image.alt = "Image";
+  imageCard.appendChild(image);
+  imageContainer.appendChild(imageCard);
+});
+});
+
+</script>
 </head>
 
 <body>
@@ -190,7 +220,13 @@
 
 
 
+            <div class="ppl_tstl">
+              <h1>Satisfied Customer's Testimonials</h1>
 
+              <div id="image-container" class="image-container">
+                <!-- Images will be added dynamically here using JavaScript -->
+              </div>
+            </div>
 
 
 
@@ -234,11 +270,7 @@
 
 
 
-  <script>
-    document.addEventListener('contextmenu', function (event) {
-    event.preventDefault();
-});
-  </script>
+
 </body>
 
 </html>

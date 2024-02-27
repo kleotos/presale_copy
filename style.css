@@ -263,7 +263,26 @@
     margin-left: 20px;
   }
 
-
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+  }
+  
+  .image-card {
+    flex: 1 0 200px; 
+    overflow: hidden;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px 8px 0 0; /* Adjust the border radius to match the image-card */
+  }
+  
 
 
 
