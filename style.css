@@ -39,15 +39,16 @@
     font-size: 25.5px;
   }
   
-  h2 {
+  /* h2 {
     font-weight: 700;
     font-size: 19.5px;
   }
   
   h3 {
     font-size: 16px;
-  }
+  } */
   
+
   h5 {
     font-size: 15px;
   }
@@ -63,16 +64,19 @@
   }
   
   
-  .img {
+  /* .img {
+
     width: 100%;
-  }
+  } */
   
-  .img img {
+  /* .img img {
     width: 100%;
     display: block;
-  }
+  } */
+
+
   
-  .btn {
+  /* .btn {
     text-align: center;
     padding: 30px 0 21px 0;
     width: 100%;
@@ -159,7 +163,7 @@
       left: 100%;
     }
   }
-  
+   */
   .container {
     width: 100%;
     max-width: 960px;
@@ -204,10 +208,10 @@
     font-weight: 700;
   }
   
-  .container section > div > div:nth-child(1) .img {
+  /* .container section > div > div:nth-child(1) .img {
     margin: 20px auto;
     max-width: 500px;
-  }
+  } */
   
   .container section > div > div:nth-child(2) .date h2 {
     color: #2fa1f4;
@@ -230,7 +234,40 @@
   .container section > div > div:nth-child(2) > div:nth-child(2) p {
     margin: 25px 0;
   }
+
+  .article img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tstl .img img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .tstl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
   
+
+  .tstl p {
+    font-size: 16px;
+    color: #333;
+    margin-left: 20px;
+  }
+
+
+
+
+
+
   footer > div {
     padding: 10px 0;
     width: 90%;
@@ -261,7 +298,8 @@
     p {
       font-size: 20px;
     }
-    .btn {
+
+    /* .btn {
       width: 50%;
       max-width: 400px;
     }
@@ -270,7 +308,7 @@
     }
     .btn a button span {
       font-size: 25px;
-    }
+    } */
     .container section {
       width: 100%;
       max-width: 1000px;
@@ -282,16 +320,31 @@
     .container section > div > div:nth-child(1) h1 {
       width: 100%;
     }
-    .container section > div > div:nth-child(1) .img {
+    /* .container section > div > div:nth-child(1) .img {
       margin: 40px auto;
-    }
+    } */
     .container section > div > div:nth-child(2) {
       max-width: 890px;
       margin: auto;
     }
+
+    .tstl {
+      display: flex;
+      flex-direction: column;
+    }
+    
+   
     footer > div p {
       font-size: 13px;
     }
   }
-  /*# sourceMappingURL=style1.css.map */
+  
+  @media screen and (min-width: 350px) {
+    
+    }
+    
+  
+
+
+  
   
