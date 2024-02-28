@@ -272,9 +272,8 @@
   
   .image-card img {
     width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px 8px 0 0; /* Adjust the border radius to match the image-card */
+    height: 500px; /* Set a fixed height for the images */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
   }
   
 
