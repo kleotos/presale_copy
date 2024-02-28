@@ -257,23 +257,17 @@
   }
   
 
-  .tstl p {
-    font-size: 16px;
-    color: #333;
-    margin-left: 20px;
-  }
-
   .image-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; 
+    gap: 20px; /* Adjust the gap between cards as needed */
   }
   
   .image-card {
-    flex: 1 0 200px; 
+    flex: 1 0 200px; /* Adjust the minimum width and maximum width as needed */
     overflow: hidden;
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; /* Adjust the border radius as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the box shadow as needed */
   }
   
   .image-card img {
@@ -283,8 +277,6 @@
     border-radius: 8px 8px 0 0; /* Adjust the border radius to match the image-card */
   }
   
-
-
 
 
   footer > div {

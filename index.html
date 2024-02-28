@@ -19,29 +19,46 @@
   event.preventDefault();
 });
 
-
 document.addEventListener("DOMContentLoaded", function() {
-const imageContainer = document.getElementById("image-container");
-const images = [
-  "./assets/T1.png",
-  "./assets/T2.png",
-  "./assets/T3.png",
-  "./assets/T4.png",
-  "./assets/T5.png",
-  "./assets/T6.png",
-  "./assets/T7.png"
-];
+  const imageContainer1 = document.getElementById("image-container1");
+  const imageContainer2 = document.getElementById("image-container2");
+  
+  const imagesSet1 = [
+    "./assets/C1.jpg",
+    "./assets/C2.jpg",
+    "./assets/C3.jpg",
+    "./assets/C4.jpg",
+    "./assets/C5.jpg",
+    "./assets/C6.jpg",
+    "./assets/C7.jpg",
+    "./assets/C8.jpg",
+  ];
+  
+  const imagesSet2 = [
+    "./assets/T1.png",
+    "./assets/T2.png",
+    "./assets/T3.png",
+    "./assets/T4.png",
+    "./assets/T5.png",
+    "./assets/T6.png",
+    "./assets/T7.png",
+  ];
 
-images.forEach(imageUrl => {
-  const imageCard = document.createElement("div");
-  imageCard.classList.add("image-card");
-  const image = document.createElement("img");
-  image.src = imageUrl;
-  image.alt = "Image";
-  imageCard.appendChild(image);
-  imageContainer.appendChild(imageCard);
+  createImageCards(imagesSet1, imageContainer1);
+  createImageCards(imagesSet2, imageContainer2);
 });
-});
+
+function createImageCards(images, container) {
+  images.forEach(imageUrl => {
+    const imageCard = document.createElement("div");
+    imageCard.classList.add("image-card");
+    const image = document.createElement("img");
+    image.src = imageUrl;
+    image.alt = "Image";
+    imageCard.appendChild(image);
+    container.appendChild(imageCard);
+  });
+}
 
 </script>
 </head>
@@ -62,6 +79,23 @@ images.forEach(imageUrl => {
           <!-- <div class="img">
             <img src="./img/n.png" alt="How I Completely got rid of Arthritis" />
           </div> -->
+          <div class="ppl_tstl">
+            <h1 style="text-align: center; text-transform: uppercase; margin-top: 2rem;">"here are some real testimonies from the thousands of people this secret solution has helped"</h1>
+
+            <div id="image-container1" class="image-container">
+            </div>
+            
+            <div id="image-container2" class="image-container">
+            </div>
+
+          </div>
+
+
+
+
+          
+
+
         </div>
         <div>
           <div class="date">
@@ -220,13 +254,7 @@ images.forEach(imageUrl => {
 
 
 
-            <div class="ppl_tstl">
-              <h1>Satisfied Customer's Testimonials</h1>
-
-              <div id="image-container" class="image-container">
-                <!-- Images will be added dynamically here using JavaScript -->
-              </div>
-            </div>
+          
 
 
 
