@@ -4,7 +4,9 @@
     margin: 0;
     padding: 0;
   }
-  
+  .container section  h1 a {
+    color: red;
+  }
   body {
     background-color: #efefef;
     color: #2f2f2f;
@@ -36,9 +38,9 @@
   }
   
   section div div h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bolder;
-    /* text-align: justify; */
+    text-align: justify;
   }
   
   /* h2 {
@@ -78,7 +80,7 @@
 
 
   
-  /* .btn {
+  .btn {
     text-align: center;
     padding: 30px 0 21px 0;
     width: 100%;
@@ -165,7 +167,7 @@
       left: 100%;
     }
   }
-   */
+  
   .container {
     width: 100%;
     max-width: 960px;
@@ -316,13 +318,9 @@
     p {
       font-size: 20px;
     }
-    section div div h1 {
-      font-size: 1px;
-      /* font-weight: bolder; */
-      /* text-align: justify; */
-    }
+    
 
-    /* .btn {
+    .btn {
       width: 50%;
       max-width: 400px;
     }
@@ -331,7 +329,7 @@
     }
     .btn a button span {
       font-size: 25px;
-    } */
+    }
     .container section {
       width: 100%;
       max-width: 1000px;
@@ -351,7 +349,11 @@
       margin: auto;
     }
 
-    
+    /* section div div h1 {
+      font-size: .5rem;
+      font-weight: bolder;
+      text-align: justify;
+    } */
     
    
     footer > div p {
