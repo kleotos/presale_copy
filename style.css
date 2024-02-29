@@ -35,8 +35,10 @@
     color: white;
   }
   
-  h1 {
-    font-size: 25.5px;
+  section div div h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    /* text-align: justify; */
   }
   
   /* h2 {
@@ -253,7 +255,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 1rem;
+
+  }
+
+  .ppl_tstl h3{
+    text-align: center; 
+    margin: 2rem 0 2rem 0; 
+    font-size: 2rem;
   }
   
 
@@ -307,6 +315,11 @@
     }
     p {
       font-size: 20px;
+    }
+    section div div h1 {
+      font-size: 1px;
+      /* font-weight: bolder; */
+      /* text-align: justify; */
     }
 
     /* .btn {
