@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Google Link -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
@@ -60,6 +59,14 @@ function createImageCards(images, container) {
   });
 }
 
+
+document.addEventListener("DOMContentLoaded", function() {
+  const animatedHeading = document.getElementById("animated-heading");
+  animatedHeading.classList.add("animated");
+});
+
+
+
 </script>
 </head>
 
@@ -71,14 +78,11 @@ function createImageCards(images, container) {
     <section>
       <div>
         <div>
-          <h1>
+          <p class="main_tst">
             In just 6 minutes you'll quickly learn the secret <br> ingredient that helped me reverse hypertension <br> after 14 painful years.
-          </h1>
+          </p>
           <h1 style="margin-top: 1rem;"><u>Over <span>7,627 </span>Nigerians already use this secret <span>Indian <br> ingredient</span></u>
           </h1>
-          <!-- <div class="img">
-            <img src="./img/n.png" alt="How I Completely got rid of Arthritis" />
-          </div> -->
 
           <div class="ppl_tstl">
             <h3>"Here are some real testimonies from the thousands of people this secret solution has helped"</h3>
@@ -93,13 +97,12 @@ function createImageCards(images, container) {
         </div>
         <div>
           <div class="date">
-            <!-- <h2>Healthy And Alive</h2> -->
-            <!-- <h3>
-              1st January, 2024 | <span><small>574, 890 views</small></span>
-            </h3> -->
+        
           </div>
           <div class="article">
            
+            <p class="main_tst">Below Is The Testimony Of <br> Dr. Akinola Owolabi PhD</p>
+
             <p>My name is Akinola Owolabi (Ph.D). I am a scientist who fought high blood pressure for 14 painful years.</p>
             <p>So it doesn’t matter where you currently are in your battle, this proven secret will reverse it and turn your life around immediately.</p>
             <p>I know you’re thinking, “Akinola, are you sure this will work for me?”</p>
@@ -149,13 +152,6 @@ function createImageCards(images, container) {
 
             <p>I present to you Arjuna and Lasuna not just as a scientist, but as someone who personally enjoyed the life-changing benefits… went from 14 years of battling high blood pressure… to a stable and healthy blood pressure…</p>
             <p>This discovery is your chance to finally reclaim your health from High Blood Pressure.</p>
-
-            <!-- <div class="ppl_tstl">
-              <h1 style="text-align: center; text-transform: uppercase;"> "some more testimonies from people that this secret solution has helped"</h1>
-              <div id="image-container2" class="image-container">
-              </div>
-            </div> -->
-
 
 
             <img src="./assets/11.jpg" alt="">
@@ -229,7 +225,7 @@ function createImageCards(images, container) {
             </div>
             <div class="tstl">
               <img src="./assets/10.png" alt="timothy">
-              <p>Timothy said “My BP dropped from 142/93 to 140/83 in just 4 days…and went to 128/74 in 96 days. I have never seen anything like this in my life. I’m grateful” 
+              <p>Timothy said “My BP dropped from <b>142/93</b> to <b>140/83</b> in just <b>4 day</b>s…and went to <b>128/74 </b>in <b>96 days</b>. I have never seen anything like this in my life. I’m grateful” 
               </p>
             </div>
 
@@ -243,7 +239,10 @@ function createImageCards(images, container) {
             <p>There’s John, who the last time we spoke wanted to stop his usual BP daily drug intake… because his BP had dropped from 142/73 to 141/73 in just 4 days… and went to 128/74 in 2 weeks of Arjuna and Lasuna”</p>
             <p>Cynthia said “she slept well and that her BP went from 150/80 to 134/83 which the doctor said was a significant progress from her previous readings.”</p>
             <p>Now that you’ve seen how effective Arjuna and Lasuna is… don't wait, quickly</p>
+
+
             <h1 style="text-align: center;">Click the <a href="./order-page">link</a> to the ORDER FORM</h1>
+
             <p>Secure your miracle and start your journey to reversing High Blood Pressure, Today!</p>
             <p>People are rushing Arjuna and Lasuna, and we could be out of stock anytime.</p>
             <p>Even if we manage to get new stocks in, at what exchange rate…? <u>which means a potential price increase.</u></p>
@@ -251,8 +250,11 @@ function createImageCards(images, container) {
             <p style="text-align: center;">Act now. 
             </p>
             <p>You can make the turning point of your life with just a click.</p>
-            <h1 style="text-align: center;">Place Your Order Now!
-            </h1>
+
+            <h1 style="text-align: center;" id="animated-heading">Place Your Order Now!</h1>
+
+
+            
             <p>What are you waiting for? Start reversing Your High Blood Pressure Today!</p>
             <h1 style="text-align: center;"> Place Your Order Below Before The Price Increases!
             </h1>

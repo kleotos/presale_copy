@@ -15,7 +15,7 @@
     -webkit-transition: 0.5s;
     transition: 0.5s;
     
-      -webkit-user-select: none;
+    -webkit-user-select: none;
    -moz-user-select: none;
    -ms-user-select: none;
    user-select: none;
@@ -37,21 +37,26 @@
     color: white;
   }
   
-  section div div h1 {
+  /* section div div h1 {
     font-size: 2.5rem;
     font-weight: bolder;
     text-align: justify;
-  }
-  
-  /* h2 {
-    font-weight: 700;
-    font-size: 19.5px;
-  }
-  
-  h3 {
-    font-size: 16px;
   } */
   
+
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  
+  
+  
+
+
+
 
   h5 {
     font-size: 15px;
@@ -67,17 +72,6 @@
     font-weight: 400;
   }
   
-  
-  /* .img {
-
-    width: 100%;
-  } */
-  
-  /* .img img {
-    width: 100%;
-    display: block;
-  } */
-
 
   
   .btn {
@@ -212,10 +206,6 @@
     font-weight: 700;
   }
   
-  /* .container section > div > div:nth-child(1) .img {
-    margin: 20px auto;
-    max-width: 500px;
-  } */
   
   .container section > div > div:nth-child(2) .date h2 {
     color: #2fa1f4;
@@ -237,6 +227,13 @@
   
   .container section > div > div:nth-child(2) > div:nth-child(2) p {
     margin: 25px 0;
+  }
+
+  .main_tst {
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+    font-weight: bolder;
+    font-size: 4rem;
   }
 
   .article img {
@@ -270,23 +267,40 @@
   .image-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Adjust the gap between cards as needed */
+    gap: 20px; 
   }
   
   .image-card {
-    flex: 1 0 200px; /* Adjust the minimum width and maximum width as needed */
+    flex: 1 0 200px;
     overflow: hidden;
-    border-radius: 8px; /* Adjust the border radius as needed */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the box shadow as needed */
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   }
   
   .image-card img {
     width: 100%;
-    height: 500px; /* Set a fixed height for the images */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    height: 500px; 
+    object-fit: cover; 
+  }
+
+
+  @keyframes colorChange {
+    0% {
+      color: red;
+    }
+    50% {
+      color: blue;
+    }
+    100% {
+      color: red;
+    }
   }
   
-
+  .animated {
+    animation: colorChange 2s ease-in-out infinite; 
+  }
+  
+  
 
   footer > div {
     padding: 10px 0;
@@ -320,6 +334,8 @@
     }
     
 
+    
+
     .btn {
       width: 50%;
       max-width: 400px;
@@ -341,19 +357,11 @@
     .container section > div > div:nth-child(1) h1 {
       width: 100%;
     }
-    /* .container section > div > div:nth-child(1) .img {
-      margin: 40px auto;
-    } */
+  
     .container section > div > div:nth-child(2) {
       max-width: 890px;
       margin: auto;
     }
-
-    /* section div div h1 {
-      font-size: .5rem;
-      font-weight: bolder;
-      text-align: justify;
-    } */
     
    
     footer > div p {
@@ -361,11 +369,23 @@
     }
   }
   
+
+
   @media screen and (min-width: 320px) {
     .tstl {
       display: flex;
       flex-direction: column;
     }
+
+    
+
+    .main_tst {
+      text-align: center;
+      margin: 2rem 0 2rem 0;
+      font-weight: bolder;
+      font-size: 2rem;
+    }
+    
     }
     
   
