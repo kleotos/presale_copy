@@ -4,9 +4,11 @@
     margin: 0;
     padding: 0;
   }
+  
   .container section  h1 a {
     color: red;
   }
+
   body {
     background-color: #efefef;
     color: #2f2f2f;
@@ -21,6 +23,12 @@
    user-select: none;
   }
   
+ .container section div #text-container .colorful-text {
+    font-size: 25px;
+    font-weight: bold;
+    animation: colorChange 5s infinite; 
+  }
+
   section > div > div h1 span {
     color: red;
   }
@@ -36,27 +44,6 @@
     background-color: #2788ce;
     color: white;
   }
-  
-  /* section div div h1 {
-    font-size: 2.5rem;
-    font-weight: bolder;
-    text-align: justify;
-  } */
-  
-
-
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  
-  
-  
-  
-
-
-
 
   h5 {
     font-size: 15px;
@@ -70,96 +57,6 @@
     padding-left: 25px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-  }
-  
-
-  
-  .btn {
-    text-align: center;
-    padding: 30px 0 21px 0;
-    width: 100%;
-    max-width: 350px;
-    margin: auto;
-  }
-  
-  .btn button {
-    width: 100%;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    outline: none;
-    margin: 20px 0;
-    padding: 20px 10px;
-    border-radius: 5px;
-    background-color: #2fa1f4;
-    border: none;
-    cursor: pointer;
-    -webkit-animation: scaling 2s infinite alternate;
-    animation: scaling 2s infinite alternate;
-    overflow: hidden;
-  }
-  
-  .btn button span {
-    font-weight: 600;
-    color: #ffffff;
-    font-size: 21px;
-  }
-  
-  .btn button:hover {
-    background-color: #1e6da5;
-  }
-  
-  .btn button:active {
-    background-color: #2fa1f4;
-  }
-  
-  .btn button span {
-    color: #ffffff;
-  }
-  
-  .btn button:after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: -100%;
-    width: 80%;
-    height: 100%;
-    background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(transparent),
-      color-stop(rgba(255, 255, 255, 0.4)),
-      to(transparent)
-    );
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(255, 255, 255, 0.4),
-      transparent
-    );
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
-    -webkit-animation: shine 2s ease-in-out infinite;
-    animation: shine 2s ease-in-out infinite;
-  }
-  
-  @-webkit-keyframes shine {
-    from {
-      left: -100%;
-    }
-    to {
-      left: 100%;
-    }
-  }
-  
-  @keyframes shine {
-    from {
-      left: -100%;
-    }
-    to {
-      left: 100%;
-    }
   }
   
   .container {
@@ -205,7 +102,6 @@
     line-height: 1.3em;
     font-weight: 700;
   }
-  
   
   .container section > div > div:nth-child(2) .date h2 {
     color: #2fa1f4;
@@ -300,7 +196,6 @@
     animation: colorChange 2s ease-in-out infinite; 
   }
   
-  
 
   footer > div {
     padding: 10px 0;
@@ -332,10 +227,7 @@
     p {
       font-size: 20px;
     }
-    
-
-    
-
+  
     .btn {
       width: 50%;
       max-width: 400px;
@@ -369,15 +261,11 @@
     }
   }
   
-
-
   @media screen and (min-width: 320px) {
     .tstl {
       display: flex;
       flex-direction: column;
     }
-
-    
 
     .main_tst {
       text-align: center;
@@ -388,8 +276,4 @@
     
     }
     
-  
-
-
-  
   
